@@ -1,0 +1,12 @@
+{
+	"authenticationMethod": "route",
+	"routes": [
+		{
+			"csrfProtection": false,
+			"source": "^/com.sap.edm.sampleservice.v2/(.*)$",
+			"target": "$1",
+			"destination": "com.sap.edm.sampleservice.v2",
+			"authenticationType": "xsuaa"
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+    "Service": "/FirstMDKApp/Services/com_sap_edm_sampleservice_v2.service",
+    "DefiningRequests": [{
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products"
+        },
+        {
+            "Name": "PurchaseOrderHeaders",
+            "Query": "PurchaseOrderHeaders"
+        },
+        {
+            "Name": "PurchaseOrderItems",
+            "Query": "PurchaseOrderItems"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnSuccess": "/FirstMDKApp/Actions/Service/InitializeOfflineSuccessMessage.action",
+    "OnFailure": "/FirstMDKApp/Actions/Service/InitializeOfflineFailureMessage.action"
+}

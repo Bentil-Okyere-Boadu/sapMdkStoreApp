@@ -1,0 +1,40 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.BottomNavigation",
+			"_Name": "BottomNavigation0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Suppliers",
+					"Image": "sap-icon://supplier",
+					"PageToOpen": "/FirstMDKApp/Pages/Supplier_Table.page",
+					"_Name": "TabItem0"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Customers",
+					"Image": "sap-icon://customer",
+					"PageToOpen": "/FirstMDKApp/Pages/Customer_List.page",
+					"_Name": "TabItem1"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Products",
+					"Image": "sap-icon://product",
+					"PageToOpen": "/FirstMDKApp/Pages/Products_List.page",
+					"_Name": "TabItem2"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Orders",
+					"Image": "sap-icon://sales-order",
+					"_Name": "TabItem3"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "BottomNavControl",
+	"Caption": "$(L,'StoreName')"
+}

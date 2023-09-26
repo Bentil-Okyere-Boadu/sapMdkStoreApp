@@ -1,0 +1,8 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "NavToBottom_Nav_Control"
+	},
+	"PageToOpen": "/FirstMDKApp/Pages/Bottom_Nav_Control.page",
+	"NavigationType": "Inner"
+}

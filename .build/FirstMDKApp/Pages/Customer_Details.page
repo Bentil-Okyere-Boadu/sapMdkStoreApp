@@ -1,0 +1,100 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectHeader",
+					"_Name": "SectionObjectHeader0",
+					"ObjectHeader": {
+						"Subhead": "{FirstName}",
+						"Footnote": "{EmailAddress}",
+						"StatusText": "{PhoneNumber}",
+						"SubstatusText": "{Country}",
+						"DetailImage": "sap-icon://customer",
+						"DetailImageIsCircular": false,
+						"BodyText": "{DateOfBirth}",
+						"HeadlineText": "{LastName}",
+						"StatusPosition": "Stacked",
+						"StatusImagePosition": "Leading",
+						"SubstatusImagePosition": "Leading"
+					},
+					"Visible": true
+				},
+				{
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true
+					},
+					"KeyAndValues": [
+						{
+							"Value": "{Address/HouseNumber} {Address/Street} {Address/PostalCode}",
+							"_Name": "KeyValue0",
+							"KeyName": "Address",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true
+					},
+					"KeyAndValues": [
+						{
+							"Value": "{Address/Country}",
+							"_Name": "KeyValue1",
+							"KeyName": "Country",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Customer_Details",
+	"Caption": "Customer Details",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Edit",
+				"Icon": "sap-icon://edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"IconText": "Edit",
+				"Visible": true,
+				"OnPress": "/FirstMDKApp/Actions/NavToCustomer_Edit.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

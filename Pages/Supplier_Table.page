@@ -1,0 +1,110 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Header": {
+						"DataTable": {
+							"Items": [
+								{
+									"Text": "$(L,'TableColumnProductId')",
+									"NumberOfLines": 1
+								},
+								{
+									"Text": "$(L,'TableColumnName')",
+									"NumberOfLines": 1
+								},
+								{
+									"Text": "$(L,'TableColumnCategory')",
+									"NumberOfLines": 1
+								},
+								{
+									"Text": "$(L,'TableColumnPrice')",
+									"NumberOfLines": 1
+								}
+							]
+						},
+						"_Name": "SectionDataTableHeader0",
+						"AccessoryType": "none",
+						"UseTopPadding": true
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Row": {
+						"Items": [
+							{
+								"Value": "{ProductId}",
+								"DisplayType": "Text",
+								"EditType": "Text",
+								"NumberOfLines": 1,
+								"TextAlignment": "left"
+							},
+							{
+								"Value": "{Name}",
+								"DisplayType": "Text",
+								"EditType": "Text",
+								"NumberOfLines": 1,
+								"TextAlignment": "left"
+							},
+							{
+								"Value": "{Category}",
+								"DisplayType": "Text",
+								"EditType": "Text",
+								"NumberOfLines": 1,
+								"TextAlignment": "left"
+							},
+							{
+								"Value": "{Price}",
+								"DisplayType": "Text",
+								"EditType": "Text",
+								"NumberOfLines": 1,
+								"TextAlignment": "left"
+							}
+						],
+						"Layout": {
+							"ColumnWidth": [
+								100,
+								100,
+								100,
+								100
+							]
+						}
+					},
+					"_Type": "Section.Type.DataTable",
+					"Target": {
+						"Service": "/FirstMDKApp/Services/com_sap_edm_sampleservice_v2.service",
+						"EntitySet": "Products",
+						"ServerSidePaging": true
+					},
+					"_Name": "SectionDataTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"EditMode": "None",
+					"Search": {
+						"Enabled": true,
+						"Placeholder": "$(L,'SearchPlaceholder')"
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": true,
+						"LoadingIndicatorText": "",
+						"PageSize": 50
+					},
+					"StickyColumn": false
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Supplier_Table",
+	"Caption": "Suppliers",
+	"PrefersLargeCaption": true
+}

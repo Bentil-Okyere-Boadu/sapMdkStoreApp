@@ -1,0 +1,26 @@
+{
+    "Service": "/FirstMDKApp/Services/com_sap_edm_sampleservice_v2.service",
+    "DefiningRequests": [{
+            "Name": "Customers",
+            "Query": "Customers"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products"
+        },
+        {
+            "Name": "PurchaseOrderHeaders",
+            "Query": "PurchaseOrderHeaders"
+        },
+        {
+            "Name": "PurchaseOrderItems",
+            "Query": "PurchaseOrderItems"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/FirstMDKApp/Actions/Service/SyncFailureMessage.action",
+    "OnSuccess": "/FirstMDKApp/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js"
+}
