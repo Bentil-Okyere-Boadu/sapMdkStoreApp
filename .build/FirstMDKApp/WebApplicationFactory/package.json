@@ -1,9 +1,0 @@
-{
-  "name": "nsStore_App",
-  "version": "0.0.1",
-  "devDependencies": {
-    "eslint": "5.16.x",
-    "bestzip": "2.1.7",
-    "rimraf": "3.0.2"
-  }
-}

@@ -1,9 +1,0 @@
-{
-	"_Type": "Action.Type.Message",
-	"ActionResult": {
-		"_Name": "UpdateCustomerFailureMsg"
-	},
-	"Message": "Failed to update customer date.",
-	"Title": "Update Customer",
-	"OKCaption": "Ok"
-}

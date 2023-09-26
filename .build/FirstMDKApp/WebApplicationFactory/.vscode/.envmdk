@@ -1,1 +1,0 @@
-destinations=[{"name":"com.sap.edm.sampleservice.v2","url":"https://com.sap.edm.sampleservice.v2.dest","proxyHost":"http://127.0.0.1","proxyPort":"8887"}]

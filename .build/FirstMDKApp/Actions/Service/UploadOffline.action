@@ -1,9 +1,0 @@
-{
-    "Service": "/FirstMDKApp/Services/com_sap_edm_sampleservice_v2.service",
-    "_Type": "Action.Type.OfflineOData.Upload",
-    "ActionResult": {
-        "_Name": "sync"
-    },
-    "OnSuccess": "/FirstMDKApp/Actions/Service/DownloadStartedMessage.action",
-    "OnFailure": "/FirstMDKApp/Actions/Service/SyncFailureMessage.action"
-}
